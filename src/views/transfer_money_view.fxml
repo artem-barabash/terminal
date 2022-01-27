@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="314.0" prefWidth="600.0" style="-fx-background-color: RED;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TransferMoneyViewController">
+   <children>
+      <Pane prefHeight="314.0" prefWidth="600.0" style="-fx-background-color: RED;">
+         <children>
+            <GridPane prefHeight="314.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="147.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="412.0" minWidth="10.0" prefWidth="343.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="110.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="91.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="188.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="TextFieldPhoneNumber" GridPane.columnIndex="1" />
+                  <TextField fx:id="TextFieldNumberCoder" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="TextFieldSumm" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label prefHeight="80.0" prefWidth="151.0" text="Номер вашого телефону" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Label text="Номер рахунку" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label text="Сума" textFill="WHITE" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#makeTransaction" prefHeight="36.0" prefWidth="343.0" style="-fx-background-color: #fff;" text="Далі" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#buttonExit" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #fff;" text="Скасувати" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </children></Pane>
+   </children>
+</AnchorPane>
